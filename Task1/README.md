@@ -56,7 +56,7 @@ texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 - ✅ Installation completed successfully with no errors
 
 #### 🔴 Output
-![Task 1.1 Output](Task1.1Output.png)
+![Task 1.1 Output](Task_1.1_Output.png)
 
 
 
