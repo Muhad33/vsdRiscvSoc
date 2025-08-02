@@ -30,19 +30,19 @@ Why: These are common build prerequisites (compilers, linkers, autotools) and li
 required by the RISC‑V simulator, proxy kernel, and other tooling. GTKWaves is included for
 waveform viewing in digital design flows.
 
-### 🧩 Step 1: Update APT Package Index
+#### 🧩 Step 1: Update APT Package Index
 
 ```bash
 sudo apt update
 ```
-### 📦 Step 2: Install Developer Tools (Installation Command)
+#### 📦 Step 2: Install Developer Tools (Installation Command)
 
 ```bash
 sudo apt-get install -y git vim autoconf automake autotools-dev curl \
 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex \
 texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 ```
-### ✅ Installation Summary
+#### ✅ Installation Summary
 
 - 📦 76 new packages were installed
 - 🔄 6 packages were upgraded
@@ -55,7 +55,7 @@ texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 - 📡 Internet connection and working repositories were required
 - ✅ Installation completed successfully with no errors
 
-## 🔴 Output
+#### 🔴 Output
 
 
 
