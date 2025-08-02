@@ -24,9 +24,39 @@ This includes compilers, linkers, autotools, and waveform visualizer **GTKWave**
 
 ---
 
-## 🚀 Step-by-Step Implementation
+## 🚀 Task 1.1 - Install base developer tools
+
+Why: These are common build prerequisites (compilers, linkers, autotools) and libraries
+required by the RISC‑V simulator, proxy kernel, and other tooling. GTKWaves is included for
+waveform viewing in digital design flows.
 
 ### 🧩 Step 1: Update APT Package Index
 
 ```bash
 sudo apt update
+```
+### 📦 Step 2: Install Developer Tools (Installation Command)
+
+```bash
+sudo apt-get install -y git vim autoconf automake autotools-dev curl \
+libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex \
+texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
+```
+### ✅ Installation Summary
+
+- 📦 76 new packages were installed
+- 🔄 6 packages were upgraded
+- ❌ 0 packages were removed
+- 📌 Examples of installed packages:
+  - Development tools: `gcc`, `g++`, `make`, `binutils`, `build-essential`
+  - Build tools: `autoconf`, `automake`, `libtool`, `bison`, `flex`
+  - Libraries: `libgmp-dev`, `libmpfr-dev`, `libmpc-dev`, `zlib1g-dev`
+  - Others: `curl`, `vim`, `git`, `gtkwave`, `texinfo`, `patchutils`
+- 📡 Internet connection and working repositories were required
+- ✅ Installation completed successfully with no errors
+
+## 🔴 Output
+
+
+
+
