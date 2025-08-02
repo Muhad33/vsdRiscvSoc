@@ -58,6 +58,29 @@ texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 #### 🔴 Output
 ![Task 1.1 Output](Task_1.1_Output.png)
 
+---
+
+## 🧩 Task 1.2: Create Workspace and Capture Home Path
+
+#### 🎯 Objective
+
+Create a dedicated `riscv_toolchain` directory in the home folder to organize all future RISC-V downloads and builds. Also store the `$HOME` path into a shell variable `$pwd` for reuse.
+
+---
+
+#### ⚙️ Commands Used
+
+```bash
+cd
+pwd=$PWD
+mkdir -p riscv_toolchain
+cd riscv_toolchain
+```
+
+#### 🔴 Output
+![Task 1.2 Output](Task_1.2_Output.png)
+
+
 
 
 
