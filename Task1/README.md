@@ -290,7 +290,7 @@ spike --help
 ```
 ### 🔴 Output
 ![Task 1.8 Output](Task_1.8_Output.png)
-![Task 1.5 Output](Task_1.81_Output.png)
+![Task 1.81 Output](Task_1.81_Output.png)
 
 
 ## 🧩 Task 1.9: Install Icarus Verilog
@@ -380,8 +380,7 @@ Copy code
 spike pk ./unique_test
 ```
 ### 🔴 Output
-![Task 1.10 Output](Task_1.10_Output.png)
-![Task 1.6 Output](unique_test.png)
+![Task 1.10 Output](unique_test.png)
 
 
 
