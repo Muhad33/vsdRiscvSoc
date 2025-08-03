@@ -163,10 +163,8 @@ sudo apt-get install -y device-tree-compiler
 
 -📦 Package: device-tree-compiler
 
--📌 Version Installed: 1.6.1-1 (or latest from your package manager)
+-📌 Version Installed: 1.6.1-1
 
--✅ If already installed, system reports:
-"device-tree-compiler is already the newest version"
 
 ### 🔴 Output
 ![Task 1.5 Output](Task_1.5_Output.png)
@@ -292,6 +290,8 @@ spike --help
 ```
 ### 🔴 Output
 ![Task 1.8 Output](Task_1.8_Output.png)
+![Task 1.5 Output](Task_1.81_Output.png)
+
 
 ## 🧩 Task 1.9: Install Icarus Verilog
 
