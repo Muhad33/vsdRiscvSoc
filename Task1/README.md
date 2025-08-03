@@ -56,7 +56,8 @@ texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 - ✅ Installation completed successfully with no errors
 
 #### 🔴 Output
-![Task 1.1 Output](Task_1.1_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.1_Output.png)
+
 
 ---
 
@@ -78,7 +79,8 @@ cd riscv_toolchain
 ```
 
 ### 🔴 Output
-![Task 1.2 Output](Task_1.2_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.2_Output.png)
+
 
 ## 🚀 Task 1.3: Install RISC-V GCC Toolchain (Prebuilt)
 
