@@ -113,7 +113,8 @@ riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/
 riscv64-unknown-elf-gcc, g++, as, objcopy, gdb, ld, etc.
 
 #### 🔴 Output
-![Task 1.3 Output](Task_1.3_Output.png)
+![Task 1.3 Output](Task_1.30_Output.png)
+![Task 1.3 Output](Task_1.31_Output.png)
 
 ## 🧩 Task 1.4: Add RISC-V Toolchain to PATH
 
@@ -208,7 +209,11 @@ spike-log-parser
 elf2hex, xspike, termios-xspike
 ```
 ### 🔴 Output
-![Task 1.6 Output](Task_1.6_Output.png)
+![Task 1.6 Output](Task_1.60_Output.png)
+![Task 1.6 Output](Task_1.61_Output.png)
+![Task 1.6 Output](Task_1.62_Output.png)
+![Task 1.6 Output](Task_1.63_Output.png)
+![Task 1.6 Output](Task_1.64_Output.png)
 
 ## 🧩 Task 1.7: Clone and Build Proxy Kernel (PK)
 
@@ -376,6 +381,7 @@ spike pk ./unique_test
 ```
 ### 🔴 Output
 ![Task 1.10 Output](Task_1.10_Output.png)
+![Task 1.6 Output](unique_test.png)
 
 
 
