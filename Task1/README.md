@@ -62,13 +62,13 @@ texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 
 ## 🧩 Task 1.2: Create Workspace and Capture Home Path
 
-#### 🎯 Objective
+### 🎯 Objective
 
 Create a dedicated `riscv_toolchain` directory in the home folder to organize all future RISC-V downloads and builds. Also store the `$HOME` path into a shell variable `$pwd` for reuse.
 
 ---
 
-#### ⚙️ Commands Used
+### ⚙️ Commands Used
 
 ```bash
 cd
@@ -77,7 +77,7 @@ mkdir -p riscv_toolchain
 cd riscv_toolchain
 ```
 
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.2 Output](Task_1.2_Output.png)
 
 ## 🚀 Task 1.3: Install RISC-V GCC Toolchain (Prebuilt)
@@ -88,14 +88,14 @@ Download and install the **SiFive prebuilt RISC-V GCC Toolchain**, which include
 
 ---
 
-### 📦 Step 1: Download the Prebuilt GCC Toolchain
+#### 📦 Step 1: Download the Prebuilt GCC Toolchain
 
 ```bash
 cd $pwd/riscv_toolchain
 wget https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14.tar.gz
 tar -xvzf riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14.tar.gz
 ```
-### 📦  Step 2: Add Toolchain to PATH
+#### 📦  Step 2: Add Toolchain to PATH
 ```bash
 export PATH=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 echo 'export PATH=$HOME/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH' >> ~/.bashrc
@@ -158,7 +158,7 @@ Install the **Device Tree Compiler (DTC)** — a required tool for compiling `.d
 ```bash
 sudo apt-get install -y device-tree-compiler
 ```
-#### ✅ Installation Summary
+### ✅ Installation Summary
 
 -📦 Package: device-tree-compiler
 
@@ -167,7 +167,7 @@ sudo apt-get install -y device-tree-compiler
 -✅ If already installed, system reports:
 "device-tree-compiler is already the newest version"
 
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.5 Output](Task_1.5_Output.png)
 
 ## 🧩 Task 1.6: Clone and Build Spike (RISC-V ISA Simulator)
@@ -189,7 +189,7 @@ mkdir -p build && cd build
 make -j$(nproc)
 sudo make install
 ```
-#### ✅ Build Summary
+### ✅ Build Summary
 
 -🔁 Cloned into riscv-isa-sim
 
@@ -207,7 +207,7 @@ spike-log-parser
 
 elf2hex, xspike, termios-xspike
 ```
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.6 Output](Task_1.6_Output.png)
 
 ## 🧩 Task 1.7: Clone and Build Proxy Kernel (PK)
@@ -230,7 +230,7 @@ mkdir -p build && cd build
 make -j$(nproc)
 sudo make install
 ```
-#### ✅ Build Summary
+### ✅ Build Summary
 -📦 Cloned into riscv-pk
 
 -🏗️ Configured with --host=riscv64-unknown-elf for cross-compilation
@@ -245,7 +245,7 @@ Libraries: libpk.a, libbbl.a, libsoftfloat.a, etc.
 
 Headers: Installed under include/riscv-pk/
 
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.7 Output](Task_1.7_Output.png)
 
 ## 🧩 Task 1.8: Add PK to PATH and Verify Tool Versions
@@ -270,7 +270,7 @@ which riscv64-unknown-elf-gcc
 riscv64-unknown-elf-gcc -v
 spike --help
 ```
-#### ✅ Verification Summary
+### ✅ Verification Summary
 -✅ pk found in:
 ```bash
 /home/username/riscv_toolchain/.../riscv64-unknown-elf/bin/pk
@@ -285,7 +285,7 @@ spike --help
 ```bash
 /home/username/riscv_toolchain/.../bin/riscv64-unknown-elf-gcc
 ```
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.8 Output](Task_1.8_Output.png)
 
 ## 🧩 Task 1.9: Install Icarus Verilog
@@ -306,7 +306,7 @@ Install the open-source **Icarus Verilog** simulator, which is essential for wri
 ```bash
 sudo apt-get install -y iverilog
 ```
-#### ✅ Installation Summary
+### ✅ Installation Summary
 -📦 Package: iverilog
 
 -🔧 Installed using: apt
@@ -315,7 +315,7 @@ sudo apt-get install -y iverilog
 
 -📡 Internet connection required
 
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.9 Output](Task_1.9_Output.png)
 
 ## 🧪 Task 1.10: Compile Uniqueness Test & Run on Spike
@@ -369,12 +369,12 @@ riscv64-unknown-elf-gcc -O2 -Wall -march=rv64imac -mabi=lp64 \
   unique_test.c -o unique_test
 ```
 
-#### 🧪 Run on Spike with Proxy Kernel
+### 🧪 Run on Spike with Proxy Kernel
 ```bash
 Copy code
 spike pk ./unique_test
 ```
-#### 🔴 Output
+### 🔴 Output
 ![Task 1.10 Output](Task_1.10_Output.png)
 
 
