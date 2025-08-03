@@ -115,8 +115,8 @@ riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/
 riscv64-unknown-elf-gcc, g++, as, objcopy, gdb, ld, etc.
 
 #### 🔴 Output
-![Task 1.3 Output](Task_1.30_Output.png)
-![Task 1.3 Output](Task_1.31_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.30_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.31_Output.png)
 
 ## 🧩 Task 1.4: Add RISC-V Toolchain to PATH
 
@@ -146,7 +146,7 @@ echo 'export PATH=$HOME/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-
 source ~/.bashrc
 ```
 #### 🔴 Output
-![Task 1.4 Output](Task_1.4_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.4_Output.png)
 
 ## 🧩 Task 1.5: Install Device Tree Compiler (DTC)
 
@@ -169,7 +169,7 @@ sudo apt-get install -y device-tree-compiler
 
 
 ### 🔴 Output
-![Task 1.5 Output](Task_1.5_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.5_Output.png)
 
 ## 🧩 Task 1.6: Clone and Build Spike (RISC-V ISA Simulator)
 
@@ -209,11 +209,11 @@ spike-log-parser
 elf2hex, xspike, termios-xspike
 ```
 ### 🔴 Output
-![Task 1.6 Output](Task_1.60_Output.png)
-![Task 1.6 Output](Task_1.61_Output.png)
-![Task 1.6 Output](Task_1.62_Output.png)
-![Task 1.6 Output](Task_1.63_Output.png)
-![Task 1.6 Output](Task_1.64_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.60_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.61_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.62_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.63_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.64_Output.png)
 
 ## 🧩 Task 1.7: Clone and Build Proxy Kernel (PK)
 
@@ -251,7 +251,7 @@ Libraries: libpk.a, libbbl.a, libsoftfloat.a, etc.
 Headers: Installed under include/riscv-pk/
 
 ### 🔴 Output
-![Task 1.7 Output](Task_1.7_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.7_Output.png)
 
 ## 🧩 Task 1.8: Add PK to PATH and Verify Tool Versions
 
@@ -291,8 +291,8 @@ spike --help
 /home/username/riscv_toolchain/.../bin/riscv64-unknown-elf-gcc
 ```
 ### 🔴 Output
-![Task 1.8 Output](Task_1.8_Output.png)
-![Task 1.81 Output](Task_1.81_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.8_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.81_Output.png)
 
 
 ## 🧩 Task 1.9: Install Icarus Verilog
@@ -323,7 +323,7 @@ sudo apt-get install -y iverilog
 -📡 Internet connection required
 
 ### 🔴 Output
-![Task 1.9 Output](Task_1.9_Output.png)
+![Task 1.1 Output](.github/assets/Task_1.9_Output.png)
 
 ## 🧪 Task 1.10: Compile Uniqueness Test & Run on Spike
 
