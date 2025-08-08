@@ -140,8 +140,7 @@ riscv64-unknown-elf-gcc -O0 -g -march=rv64imac -mabi=lp64 \
 -DBUILD_UTC="\"$T\"" -DBUILD_EPOCH=$E \
 factorial.c -o factorial
 ```
-### 🔴 Output
-![Output_2.3](https://github.com/user-attachments/assets/9236d511-3c2c-4688-81b8-fc223fd4d37c)
+
 
 ### ▶ Run
 
@@ -149,7 +148,8 @@ factorial.c -o factorial
 ```bash
 spike pk ./factorial
 ```
-
+### 🔴 Output
+![Output_2.3](https://github.com/user-attachments/assets/9236d511-3c2c-4688-81b8-fc223fd4d37c)
 
 ### 🧠 Assembly
 
