@@ -41,3 +41,24 @@ export E=$(date +%s)
 
 ![Output_2.1](https://github.com/user-attachments/assets/d7a00437-74e4-4591-b7c3-5c4c911bc8a5)
 
+## 🧩 Task 2.2 - Create Common Header unique.h
+
+### 🎯 Objective
+
+Create a reusable header for printing build/run metadata like user, host, machine ID, build time, etc.
+
+### 📄 File: unique.h
+
+Contains:
+
+* Preprocessor macros
+* fnv1a64() hash function
+* uniq_print_header() function that prints a unique proof block
+
+### ✅ Summary
+
+* Generates ProofID (compile-unique) and RunID (per-execution unique)
+
+
+
+
