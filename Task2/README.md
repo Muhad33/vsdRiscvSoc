@@ -38,4 +38,7 @@ export E=$(date +%s)
 * These values are passed as `#define` macros to every program
 
 ### 🔴 Output
+### Output – Task 2.1 (Factorial Program)
+
+![Output_2.1](https://github.com/user-attachments/assets/d7a00437-74e4-4591-b7c3-5c4c911bc8a5)
 
