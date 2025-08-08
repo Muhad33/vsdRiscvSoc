@@ -114,6 +114,48 @@ Contains:
 
 * Generates ProofID (compile-unique) and RunID (per-execution unique)
 
+## 🧩 Task 2.3 - Program 1: factorial.c
+
+### 🎯 Objective
+
+Run a recursive factorial calculation while embedding unique metadata
+
+### ⚙ Compile Command
+
+bash
+```
+riscv64-unknown-elf-gcc -O0 -g -march=rv64imac -mabi=lp64 \
+-DUSERNAME="\"$U\"" -DHOSTNAME="\"$H\"" -DMACHINE_ID="\"$M\"" \
+-DBUILD_UTC="\"$T\"" -DBUILD_EPOCH=$E \
+factorial.c -o factorial
+```
+
+
+### ▶ Run
+
+bash
+```
+spike pk ./factorial
+```
+
+
+### 🧠 Assembly
+
+bash
+```
+riscv64-unknown-elf-gcc -O0 -S factorial.c -o factorial.s
+```
+
+
+### 🛠 Disassemble Main
+
+bash
+```
+riscv64-unknown-elf-objdump -d ./factorial | sed -n '/<main>:/,/^$/p' | tee factorial_main_objdump.txt
+```
+### 🔴 Output
+
+
 
 
 
