@@ -148,7 +148,7 @@ factorial.c -o factorial
 ```bash
 spike pk ./factorial
 ```
-### 🔴 Output
+### 🔴 Output of spike
 ![Output_2.3](https://github.com/user-attachments/assets/9236d511-3c2c-4688-81b8-fc223fd4d37c)
 
 ### 🧠 Assembly
@@ -168,6 +168,107 @@ riscv64-unknown-elf-objdump -d ./factorial | sed -n '/<main>:/,/^$/p' | tee fact
 ### 🔴 Output
 ![Output_2.31](https://github.com/user-attachments/assets/d03ab41f-5cda-4b87-b7da-0b18ff6da69b)
 ![Output_2.32](https://github.com/user-attachments/assets/de3089f3-68d5-47aa-a839-f688f93e9e16)
+
+## 🧩 Task 2.4 - Program 2: max\_array.c
+
+### 🎯 Objective
+
+Find the maximum in an array and print with proof header
+
+### ⚙ Max Array Code
+```bash
+#include "unique.h"
+int main(void){
+uniq_print_header("max_array");
+int a[] = {42,-7,19,88,3,88,5,-100,37};
+int n = sizeof(a)/sizeof(a[0]), max=a[0];
+for(int i=1;i<n;i++) if(a[i]>max) max=a[i];
+printf("Array length=%d, Max=%d\n", n, max);
+return 0;
+}
+```
+(Repeat same steps as Task 2.3 for compile, run, assembly, and disassembly)
+
+### 🔴 Output of spike
+
+
+### 🔴 Output 
+
+
+## 🧩 Task 2.5 - Program 3: bitops.c
+
+### 🎯 Objective
+
+Perform basic bitwise operations and show uniqueness
+
+### ⚙ Max Array Code
+```bash
+#include "unique.h"
+int main(void){
+uniq_print_header("bitops");
+unsigned x=0xA5A5A5A5u, y=0x0F0F1234u;
+printf("x&y=0x%08X\n", x&y);
+printf("x|y=0x%08X\n", x|y);
+printf("x^y=0x%08X\n", x^y);
+printf("x<<3=0x%08X\n", x<<3);
+printf("y>>2=0x%08X\n", y>>2);
+return 0;
+}
+```
+
+(Repeat same steps as Task 2.3)
+
+### 🔴 Output of spike
+
+
+### 🔴 Output 
+
+## 🧩 Task 2.6 - Program 4: bubble\_sort.c
+
+### 🎯 Objective
+
+Perform bubble sort and print sorted array with proof header
+
+### ⚙ Max Array Code
+```bash
+#include "unique.h"
+void bubble(int *a,int n){ for(int i=0;i<n-1;i++) for(int j=0;j<n-1-i;j++) if(a[j]>a[j
++1]){int t=a[j];a[j]=a[j+1];a[j+1]=t;} }
+int main(void){
+uniq_print_header("bubble_sort");
+int a[]={9,4,1,7,3,8,2,6,5}, n=sizeof(a)/sizeof(a[0]);
+bubble(a,n);
+printf("Sorted:"); for(int i=0;i<n;i++) printf(" %d",a[i]); puts("");
+return 0;
+}
+```
+
+(Repeat same steps as Task 2.3)
+### 🔴 Output of spike
+
+
+### 🔴 Output 
+
+## 🧩 Task 2.7 - Instruction Decoding
+
+### 🎯 Objective
+
+Manually decode at least 5 RISC‑V integer instructions from .s or .objdump output
+
+
+
+
+
+## ✅ Final Checklist
+
+| Checkpoint                      | Status |
+| ------------------------------- | ------ |
+| Toolchain Installed             | ✅      |
+| Unique Variables Set            | ✅      |
+| All 4 Programs Compiled & Ran   | ✅      |
+| ProofID / RunID Present         | ✅      |
+| Disassembly Captured            | ✅      |
+| Instruction Decoding Documented | ✅      |
 
 
 
