@@ -119,30 +119,42 @@ Contains:
 ### 🎯 Objective
 
 Run a recursive factorial calculation while embedding unique metadata
+### ⚙ Factorial Code
+```bash
+#include "unique.h"
+static unsigned long long fact(unsigned n){ return (n<2)?1ULL:n*fact(n-1); }
+int main(void){
+uniq_print_header("factorial");
+unsigned n = 12;
+printf("n=%u, n!=%llu\n", n, fact(n));
+return 0;
+}
+```
 
 ### ⚙ Compile Command
 
-bash
-```
+
+```bash
 riscv64-unknown-elf-gcc -O0 -g -march=rv64imac -mabi=lp64 \
 -DUSERNAME="\"$U\"" -DHOSTNAME="\"$H\"" -DMACHINE_ID="\"$M\"" \
 -DBUILD_UTC="\"$T\"" -DBUILD_EPOCH=$E \
 factorial.c -o factorial
 ```
-
+### 🔴 Output
+![Output_2.3](https://github.com/user-attachments/assets/9236d511-3c2c-4688-81b8-fc223fd4d37c)
 
 ### ▶ Run
 
-bash
-```
+
+```bash
 spike pk ./factorial
 ```
 
 
 ### 🧠 Assembly
 
-bash
-```
+
+```bash
 riscv64-unknown-elf-gcc -O0 -S factorial.c -o factorial.s
 ```
 
@@ -154,8 +166,8 @@ bash
 riscv64-unknown-elf-objdump -d ./factorial | sed -n '/<main>:/,/^$/p' | tee factorial_main_objdump.txt
 ```
 ### 🔴 Output
-
-
+![Output_2.31](https://github.com/user-attachments/assets/d03ab41f-5cda-4b87-b7da-0b18ff6da69b)
+![Output_2.32](https://github.com/user-attachments/assets/de3089f3-68d5-47aa-a839-f688f93e9e16)
 
 
 
