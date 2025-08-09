@@ -222,7 +222,7 @@ return 0;
 
 ![Output_2.5](https://github.com/user-attachments/assets/26baf045-957f-4699-b316-2931a5e9aabb)
 ### 🔴 Output 
-![Output_2.5](https://github.com/user-attachments/assets/dc00e1dc-f70d-47e4-9857-4aa0cf1ab86d)
+![Output_2.5](https://github.com/user-attachments/assets/78a02ef7-ce51-4615-b576-09632a9f52a3)
 ## 🧩 Task 2.6 - Program 4: bubble\_sort.c
 
 ### 🎯 Objective
