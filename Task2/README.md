@@ -201,7 +201,7 @@ return 0;
 
 Perform basic bitwise operations and show uniqueness
 
-### ⚙ Max Array Code
+### ⚙ Bitops Code
 ```bash
 #include "unique.h"
 int main(void){
@@ -220,16 +220,16 @@ return 0;
 
 ### 🔴 Output of spike
 
-
+![Output_2.5](https://github.com/user-attachments/assets/26baf045-957f-4699-b316-2931a5e9aabb)
 ### 🔴 Output 
-
+![Output_2.5](https://github.com/user-attachments/assets/dc00e1dc-f70d-47e4-9857-4aa0cf1ab86d)
 ## 🧩 Task 2.6 - Program 4: bubble\_sort.c
 
 ### 🎯 Objective
 
 Perform bubble sort and print sorted array with proof header
 
-### ⚙ Max Array Code
+### ⚙ Bubble sort Code
 ```bash
 #include "unique.h"
 void bubble(int *a,int n){ for(int i=0;i<n-1;i++) for(int j=0;j<n-1-i;j++) if(a[j]>a[j
@@ -245,15 +245,17 @@ return 0;
 
 (Repeat same steps as Task 2.3)
 ### 🔴 Output of spike
-
+![Output_2.6](https://github.com/user-attachments/assets/512933b0-b997-4bc7-b99c-18a1a73afb51)
 
 ### 🔴 Output 
-
+![Output_2.6](https://github.com/user-attachments/assets/dc00e1dc-f70d-47e4-9857-4aa0cf1ab86d)
 ## 🧩 Task 2.7 - Instruction Decoding
 
 ### 🎯 Objective
 
 Manually decode at least 5 RISC‑V integer instructions from .s or .objdump output
+The detailed instruction decoding for all programs can be found here:  
+➡️ [Instruction Decoding File](Task2/instruction_decoding.md)
 
 
 
