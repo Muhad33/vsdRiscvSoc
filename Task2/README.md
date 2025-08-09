@@ -2,7 +2,7 @@
 
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox-orange)
 ![Toolchain](https://img.shields.io/badge/Toolchain-RISC--V-blue)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Environment](https://img.shields.io/badge/Environment-Ubuntu%2022.04-yellow)
 
 ---
