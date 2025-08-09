@@ -253,7 +253,7 @@ return 0;
 
 ### 🎯 Objective
 
-Manually decode at least 5 RISC‑V integer instructions from .s or .objdump output
+Manually decode at least 5 RISC‑V integer instructions from .s or .objdump output.
 The detailed instruction decoding for all programs can be found here:  
 ➡️ [Instruction Decoding File](Task2/instruction_decoding.md)
 
