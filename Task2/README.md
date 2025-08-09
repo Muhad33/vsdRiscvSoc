@@ -255,7 +255,7 @@ return 0;
 
 Manually decode at least 5 RISC‑V integer instructions from .s or .objdump output.
 The detailed instruction decoding for all programs can be found here:  
-➡️ [Instruction Decoding File](Task2/instruction_decoding.md)
+➡️ [Instruction Decoding File](/instruction_decoding.md)
 
 
 
