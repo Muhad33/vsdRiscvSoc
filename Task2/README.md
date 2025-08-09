@@ -190,11 +190,11 @@ return 0;
 (Repeat same steps as Task 2.3 for compile, run, assembly, and disassembly)
 
 ### 🔴 Output of spike
-
+![Output_2.4](https://github.com/user-attachments/assets/79d42776-9c21-43f6-9dbe-daf8670bb012)
 
 ### 🔴 Output 
 
-
+![Output_2.4](https://github.com/user-attachments/assets/a3d52ab9-5d5f-42ce-b6cd-b41965d3fd20)
 ## 🧩 Task 2.5 - Program 3: bitops.c
 
 ### 🎯 Objective
