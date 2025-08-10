@@ -292,7 +292,7 @@ spike --help
 ```
 ### 🔴 Output
 ![Task 1.1 Output](.github/assets/Task_1.8_Output.png)
-![Task 1.1 Output](.github/assets/Task_1.81_Output.png)
+![Task 1.1 Output](.github/assets/spike_versionOutput.png)
 
 
 ## 🧩 Task 1.9: Install Icarus Verilog
